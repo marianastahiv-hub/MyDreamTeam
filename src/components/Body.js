@@ -2,6 +2,7 @@ import React from "react";
 import DeveloperCard from "./DeveloperCard";
 
 const Body = () => {
+
   const developers = [
     {
       image: "/images/developers/Vlad.jpeg",
@@ -16,10 +17,11 @@ const Body = () => {
       bio: "За достатню ціну все можливо. Full-stack розробник."
     },
     {
-      image: "/avatar-default.png",
-      name: "Розробник 3",
+      image: "/images/developers/Maksym.jpg",
+      name: "Максим Коваль",
       position: "Студент групи ПЗ-24",
-      bio: "Біографія розробника 3. Опишіть тут інтереси та навички цього розробника."
+      bio: "18 рочків. Пишу на C# цікавлюсь backend-розробкою."
+
     },
     {
       image: "/images/developers/Rostyslav.jpg",
