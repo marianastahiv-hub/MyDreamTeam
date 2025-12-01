@@ -1,15 +1,51 @@
 import React from "react";
+import DeveloperCard from "./DeveloperCard";
 
 const Body = () => {
+  const developers = [
+    {
+      image: "/images/developers/Vlad.jpeg",
+      name: "Владсилав Циндрін",
+      position: "Студент групи ПЗ-24",
+      bio: "Захоплююся веб-розробкою та створенням інноваційних рішень. Прагну постійно розвиватися та вдосконалювати свої навички у програмуванні."
+    },
+    {
+      image: "/avatar-default.png",
+      name: "Розробник 2",
+      position: "Студент групи ПЗ-24",
+      bio: "Біографія розробника 2. Опишіть тут інтереси та навички цього розробника."
+    },
+    {
+      image: "/avatar-default.png",
+      name: "Розробник 3",
+      position: "Студент групи ПЗ-24",
+      bio: "Біографія розробника 3. Опишіть тут інтереси та навички цього розробника."
+    },
+    {
+      image: "/avatar-default.png",
+      name: "Розробник 4",
+      position: "Студент групи ПЗ-24",
+      bio: "Біографія розробника 4. Опишіть тут інтереси та навички цього розробника."
+    },
+    {
+      image: "/avatar-default.png",
+      name: "Розробник 5",
+      position: "Студент групи ПЗ-24",
+      bio: "Біографія розробника 5. Опишіть тут інтереси та навички цього розробника."
+    }
+  ];
+
   return (
     <main style={styles.body}>
-      <div style={styles.card}>
-        <img src={"/avatar-default.png"} alt="John Doe" style={styles.photo} />
-        <div style={styles.textContainer}>
-          <h2 style={styles.name}>John Doe</h2>
-          <p style={styles.position}>Software engineer</p>
-        </div>
-      </div>
+      {developers.map((developer, index) => (
+        <DeveloperCard
+          key={index}
+          image={developer.image}
+          name={developer.name}
+          position={developer.position}
+          bio={developer.bio}
+        />
+      ))}
     </main>
   );
 };
@@ -18,38 +54,10 @@ const styles = {
   body: {
     display: "flex",
     flexWrap: "wrap",
-  },
-  card: {
-    width: "150px",
-    padding: "1em",
-    borderRadius: "10px",
-    backgroundColor: "#fff",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-    textAlign: "center",
-    margin: "1em",
-    display: "flex",
-    flexDirection: "column",
+    justifyContent: "center",
     alignItems: "center",
-  },
-  photo: {
-    width: "100px",
-    height: "100px",
-    borderRadius: "50%",
-    objectFit: "cover",
-  },
-  textContainer: {
-    marginTop: "0.5em",
-  },
-  name: {
-    fontSize: "1em",
-    fontWeight: "bold",
-    color: "#333",
-    margin: "0",
-  },
-  position: {
-    fontSize: "0.9em",
-    color: "#6a0dad", // Same purple color as header
-    margin: "0.5em 0 0 0",
+    minHeight: "80vh",
+    padding: "2em",
   },
 };
 
