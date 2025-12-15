@@ -33,7 +33,7 @@ const Body = () => {
       image: "/images/developers/photo_2025-12-01_20-09-56.jpg",
       name: "Максим Рапак",
       position: "Студент групи ПЗ-24",
-      bio: "Чіл бой."
+      bio: "Чіл гай."
     }
   ];
 
