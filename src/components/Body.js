@@ -14,7 +14,7 @@ const Body = () => {
       image: "/images/developers/Mariana.jpg",
       name: "Стахів Мар'яна",
       position: "Студентка групи ПЗ-24",
-      bio: "За достатню ціну все можливо. Full-stack розробник."
+      bio: "За достатню оплату все можливо. Full-stack розробник."
     },
     {
       image: "/images/developers/Maksym.jpg",
